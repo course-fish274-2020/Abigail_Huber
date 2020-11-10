@@ -14,3 +14,8 @@ fish_data_cat <- fish_data %>%
 #scale length > 1 mm
 fish_data_cat_clean <- filter(fish_data_cat, scalelength > 1)
 
+
+
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
+
