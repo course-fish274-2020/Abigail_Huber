@@ -27,3 +27,8 @@ fish_data_cat_clean <- filter(fish_data_cat, scalelength > 1)
 ggplot(fish_data_cat, aes(x = length, y = scalelength, color = lakeid)) +
   geom_point() +
   labs( x = "Length", y = "Scalelength")
+
+
+#Instructor comment
+ggplot(fish_data_cat, aes(x = scalelength, fill = length_cat)) +
+  geom_histogram()
