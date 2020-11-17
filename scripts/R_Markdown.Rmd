@@ -33,7 +33,7 @@ The data includes `r length(unique(data$species_id))` species.
 
 Get the time-series of counts for all species.
 
-```{r}
+```{r Time_Series}
 time_series <-
   data %>%
   group_by(species_id, year) %>%
