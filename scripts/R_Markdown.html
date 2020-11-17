@@ -423,6 +423,20 @@ summary {
 <li>Process it into population time series</li>
 <li>And make initial visualizations</li>
 </ol>
+<pre class="r"><code>library(dplyr)
+library(ggplot2)</code></pre>
+</div>
+<div id="data" class="section level2">
+<h2>Data</h2>
+<pre class="r"><code>data &lt;- read.csv(&quot;https://ndownloader.figshare.com/files/2292172&quot;)
+head(data)</code></pre>
+<pre><code>##   record_id month day year plot_id species_id sex hindfoot_length weight
+## 1         1     7  16 1977       2         NL   M              32     NA
+## 2         2     7  16 1977       3         NL   M              33     NA
+## 3         3     7  16 1977       2         DM   F              37     NA
+## 4         4     7  16 1977       7         DM   M              36     NA
+## 5         5     7  16 1977       3         DM   M              35     NA
+## 6         6     7  16 1977       1         PF   M              14     NA</code></pre>
 </div>
 
 
